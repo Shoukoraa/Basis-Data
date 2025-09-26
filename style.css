@@ -1,0 +1,113 @@
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: linear-gradient(to bottom, #f0f0f0, #d6d6d6);
+      color: #333;
+    }
+
+    header {
+      flex: 1;
+      background-image: url(ubp_karawang_cover.jpg); 
+      background-size: cover;
+      background-position: center; 
+      background-repeat: no-repeat;
+
+      display: flex;
+      justify-content: center;
+        align-items: center;
+        padding: 50px 20px;
+    }
+
+    .judul {
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 32px;
+        font-weight: bold;
+        color: white;
+        text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+    }
+
+    header {
+        position: relative;
+    }
+
+    header h1 {
+      margin: 0 0 10px 0;
+      font-size: 28px;
+      text-align: center;
+    }
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 15px;
+    }
+    .post {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+    .post h2 {
+      margin: 0;
+      padding: 15px;
+      font-size: 18px;
+      background: #e0e0e0;
+      cursor: pointer;
+    }
+    .post-content {
+      display: none;
+      padding: 15px;
+      border-top: 1px solid #ccc;
+      font-size: 15px;
+      line-height: 1.6;
+      text-align: justify;
+    }
+    
+    footer {
+      text-align: center;
+      padding: 1px;
+      background: #444;
+      color: white;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    .profile-container {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      justify-content: center;
+    }
+    
+    .profile img {
+      width: 170px;
+      border-radius: 10%;
+      border: 3px solid #fff;
+      box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    }
+    
+    .profile table {
+      color: white;
+      font-size: 16px;
+      border-collapse: collapse;
+    }
+
+    .profile table td {
+      padding: 5px 10px;
+    }
+
+    .profile table td:first-child {
+      font-weight: bold;
+    }
+
+    .footer1 {
+        list-style-type: none;
+        color: rgb(79, 79, 255);
+        text-decoration: none;
+    }

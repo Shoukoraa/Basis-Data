@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas Basis Data</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="profile-container">
+    <h1 class="judul">Profile</h1>
+      <div class="profile">
+        <img src="Gw.jpg" alt="Foto Profil">
+    </div>
+      <div class="profile">
+        <table>
+          <tr>
+            <td>Nama</td>
+            <td>: JONATAN SAPUTRA SIMBOLON</td>
+          </tr>
+          <tr>
+            <td>NIM</td>
+            <td>: 24416255201154</td>
+          </tr>
+          <tr>
+            <td>Kelas</td>
+            <td>: IF24D</td>
+          </tr>
+          <tr>
+            <td>Alamat Email</td>
+            <td>: if24.jonatansimbolon@mhs.ubpkarawang.ac.id</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="post">
+      <h2 onclick="togglePost(1)">Post 1: Apa yang anda harapkan dari MK Basis Data</h2>
+      <div class="post-content" id="post1">
+        <p>Selain itu, saya berharap perkuliahan ini memberi gambaran nyata bagaimana database digunakan dalam dunia kerja, misalnya untuk sistem akademik, aplikasi e-commerce, maupun aplikasi sehari-hari seperti media sosial. Dengan begitu, saya bisa menghubungkan teori yang dipelajari dengan implementasinya di lapangan.</p>
+        <br>
+        <table>
+          <tr>
+            <td>1.</td>
+            <td>Memahami konsep dasar basis data secara menyeluruh.</td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>Mampu merancang struktur database yang sesuai dengan kebutuhan sistem.</td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>Menguasai bahasa SQL untuk mengelola dan mengolah data dengan tepat.</td>
+          </tr>
+          <tr>
+            <td>4.</td>
+            <td>Menjadikan ilmu basis data sebagai bekal penting dalam pengembangan aplikasi dan software di masa depan.</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="post">
+      <h2 onclick="togglePost(2)">Post 2: Apa itu Basis Data</h2>
+      <div class="post-content" id="post2">
+        <p>Basis data atau database adalah kumpulan informasi atau data yang terstruktur, sistematis, dan saling berhubungan yang di simpan elektronik dalam komputer agar mudah di akses, di kelola dan di perbarui oleh user menggunakan perangkat lunak khusus yang disebut Sistem Manajemen Basis Data (DBMS).
+        <br>
+        <p><b>CONTOH BASIS DATA PADA UNIVERSITAS:</b></p>
+        <table border="1" cellpadding="10" cellspacing="0">
+          <tr>
+            <th>NIM</th>
+            <th>Nama</th>
+            <th>Jurusan</th>
+            <th>Kelas</th>
+          </tr>
+          <tr>
+            <td>24416255201154</td>
+            <td>Jonatan Saputra Simbolon</td>
+            <td>Informatika</td>
+            <td>IF24D</td>
+          </tr>
+          <tr>
+            <td>24416255201120</td>
+            <td>Sheren Angelin Wijaya</td>
+            <td>Informatika</td>
+            <td>IF24D</td>
+          </tr>
+          <tr>
+            <td>24416255201156</td>
+            <td>Windah Batubara</td>
+            <td>Sastra Mesin</td>
+            <td>SM24C</td>
+          </tr>
+          <tr>
+            <td>24416255201157</td>
+            <td>Sigit Rendang</td>
+            <td>Sastra Batak</td>
+            <td>SB24D</td>
+          </tr>
+        </table>
+        <br>
+        <p><b>Penjelasan:</b></p>
+        <table>
+            <tr>
+              <td><b>NIM</b></td>
+              <td>:</td>
+              <td>Nomor Induk Mahasiswa, sebagai identitas unik setiap mahasiswa.</td>
+            </tr>
+            <tr>
+              <td><b>Nama</b></td>
+              <td>:</td>
+              <td>Nama lengkap mahasiswa.</td>
+            </tr>
+            <tr>
+              <td><b>Jurusan</b></td>
+              <td>:</td>
+              <td>Program studi yang diambil oleh mahasiswa.</td>
+            </tr>
+            <tr>
+              <td><b>Kelas</b></td>
+              <td>:</td>
+              <td>Kelas atau kelompok belajar yang diikuti oleh mahasiswa.</td>
+            </tr>
+          </table>
+          <p>Jika di simpan pada basis data (atau database) data di atas bisa di akses dengan mudah misalnya <i>DICARI</i>→ Siapa mahasiswa dengan NIM tertentu, <i>DITAMBAH</i>→ Jika ada mahasiswa baru, <i>DIRUBAH</i>→ Jika ada kesalahan dalam data, <i>DIHAPUS</i>→ Jika mahasiswa sudah lulus atau lain sebagainya.</p>
+        </p>
+      </div>
+    </div>
+
+    <div class="post">
+      <h2 onclick="togglePost(3)">Post 3: Apa itu Conceptual DB</h2>
+      <div class="post-content" id="post3">
+        <p>Conceptual DB (atau database) adalah tahap awal dalam perancangan basis data yang berfokus pada pemahaman struktur data dan hubungan antar entitas tanpa memedulikan detail implementasi teknis atau perangkat keras. </p>
+        <!-- ========================================================== -->
+        <p>Tujuannya adalah untuk menciptakan model data yang jelas dan abstrak yang merepresentasikan kebutuhan informasi suatu organisasi, sehingga semua pihak dapat memahaminya sebelum diterjemahkan ke dalam desain logis dan fisik. </p>
+        <!-- ==========JUDUL========== -->
+        <center><p><b>Ciri-Ciri Database konseptual</b></p></center>
+        <!-- ==========JUDUL========== -->
+        <p><b>Abstrak dan Independen</b><br>
+        Model ini tidak terikat pada perangkat lunak atau perangkat keras tertentu, sehingga bersifat independen dari pertimbangan fisik. </p>
+        <p><b>Tujuan Pemahaman</b><br>
+        Memberikan gambaran yang jelas tentang struktur data yang relevan, atributnya, serta hubungan antar entitas untuk kebutuhan informasi pengguna.  </p>
+        <p><b>Tahap Awal Desain</b><br>
+        Merupakan tahapan pertama dari tiga tahap desain database, yang menghasilkan model konseptual data (CDM) atau skema konseptual. </p>
+        <p><b>Tidak terikat DBMS tertentu</b><br>
+        Conceptual DB hanya menggambarkan ide besar database, tanpa tergantung pada perangkat lunak (DBMS) yang akan dipakai untuk implementasi.  </p>
+      </div>
+    </div>
+
+    <div class="post">
+      <h2 onclick="togglePost(4)">Post 4: Apa itu Physical Model</h2>
+      <div class="post-content" id="post4">
+        <p>Physical Model merupakan model yang menggunakan sejumlah tabel untuk menggambarkan data serta hubungan antara data-data tersebut. Setiap tabel mempunyai sejunlah kolom di mana setiap kolom memiliki nama yang unik.</p>
+        <br>
+        <p>Sebuah physical data model adalah representasi dari design data yang memperhitungkan fasilitas dan kendala sistem database yang diberikan manajemen. Dalam siklus hidup proyek itu biasanya berasal dari model data logis, meskipun mingki reversed engineered dari implementasi data yang diberikan. Sebuah physical data model lengkap akan mencakup semua artefak database yang diperlukan untuk membuat hubungan antara tabel atau mencapai tujuan kinerj, seperti indeks defisini kendala, menghubungkan tabel, tabel dipartisi atau cluster. Physical data model biasanya dapat digunakan untuk menghitung perkiraan penyimpanan dan mungkin termasuk rician alokasi penyimpanan khusus untuk sistem database tertentu.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Blog Basis Data. All rights reserved.
+    <a href="https://ubpkarawang.ac.id/" target="_blank" class="footer1">Universitas Buana Perjuangan Karawang</a></p>
+  </footer>
+
+  <script>
+    function togglePost(num) {
+      let contents = document.querySelectorAll(".post-content");
+      contents.forEach((c, i) => {
+        if (i === num - 1) {
+          c.style.display = (c.style.display === "block") ? "none" : "block";
+        } else {
+          c.style.display = "none";
+        }
+      });
+    }
+  </script>
+</body>
+</html>
